@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<title>Kiwi Kars</title>
+	<link href="Kiwi_kars.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<header>
+		<img class="logo" src="../images/kiwi_kars_transparent.png">
+	</header>
+	<div><img class="background" src="../images/central-otago-new-zealand-wallpaper.jpg" style="width:79.3vw; height:30vw;"></div>
+	<div class="top_box"></div>
+	<div class="top_left" style="font-size:.9vw;">
+		<h1>Welcome to Kiwi Kars</h1>
+		<p></p>
+		<form action="/action_page.php">
+			<label for="Pick_up_Date" style="font-size:.9vw;">Pick up Date:</label> 
+			<input id="pickUp" name="pickUp" type="date" style="font-size:.9vw; width:11vw;"> 
+		</form>
+		<p></p><label>Number of nights:</label> <br><br><input class="numnights" id="numberNightsInput" max="14" min="1" type="number">
+	</div>
+	<br>
+	<div class="card" data-name="Holden Trax" data-price="41" data-seats="5" data-type="Automatic"><img class="card_img" src="../images/Holden%20Trax%20card.jpg" alt="car"></div>
+	<p></p>
+	<div class="card" data-name="Nissan Leaf" data-price="89" data-seats="4" data-type="Automatic"><img class="card_img" src="../images/Nissan Caravan card.png" alt="car"></div>
+	<p></p>
+	<div class="card" data-name="Suzuki Swift" data-price="18" data-seats="5" data-type="Automatic"><img class="card_img" src="../images/Suzuki Swift card.jpg" alt="car"></div>
+	<p></p>
+	<div class="card" data-name="Nissan Tiida" data-price="18" data-seats="5" data-type="Automatic"><img class="card_img" src="../images/Nissan Tiida card.png" alt="car"></div>
+	<p></p>
+	<div class="card" data-name="Holden Captiva" data-price="52" data-seats="5" data-type="Automatic"><img class="card_img" src="../images/Holden Captiva card.png" alt="car"></div>
+	<p></p>
+	<div class="card" data-name="Mazda 3" data-price="23" data-seats="5" data-type="Automatic"><img class="card_img" src="../images/Holden%20Trax%20card.jpg" alt="car"></div>
+	<p></p>
+	<div class="card" data-name="Toyota Estima" data-price="62" data-seats="8" data-type="Automatic"><img class="card_img" src="../images/Toyota Estima card.jpg" alt="car"></div>
+	<p></p>
+	<div class="subtext">Chosen car Details</div>
+	<div class="subtitles">
+		<p></p>
+		<table>
+		<tr>
+			<th></th>
+			<th><h1 id="carDetails"></h1></th>
+		</tr>
+		<tr>
+			<td>Name:</td>
+			<td><div class="one" id="carName"></div></td>
+		</tr>
+		<tr>
+			<td>Amount of Seats:</td>
+			<td><div class="one" id="seatOutput"></div></td>
+
+		</tr>
+		<tr>
+			<td>Transmission Type:</td>
+			<td class="one" id="TypeOutput"></td>
+		</tr>
+		<tr>
+			<td>Price Per Day:</td>
+			<td><div class="one" id="PriceOutput"></div></td>
+		</tr>
+
+
+	</table>
+
+		<p></p>
+		<h2>Optional Extras</h2>
+		<p></p>
+	</div>
+	<div>
+		<div class="boxes">
+			<p></p><input class="addCheck" data-name="Snow_chains" data-price="60" id="box-1" type="checkbox"> <label class="addChecks" for="box-1" >Snow chains $60</label>
+			<p></p><input class="addCheck" data-name="Roof_Racks" data-price="50" id="box-2" type="checkbox"> <label class="addChecks" for="box-2" >Roof Racks $90</label>
+			<p></p><input class="addCheck" data-name="Bike Rack" data-price="60" id="box-3" type="checkbox"> <label class="addChecks" for="box-3" >Bike Rack (fits max 3 bikes) $120</label>
+			<p></p><input class="addCheck" data-name="GPS" data-price="50" id="box-4" type="checkbox"> <label class="addChecks" for="box-4" >GPS $35</label>
+			<p></p><input class="addCheck" data-name="Child_Booster_Seat" data-price="0" id="box-5" type="checkbox"> <label class="addChecks" for="box-5" >Child Booster Seat (9 - 36kg) $50</label>
+			<p></p>
+		</div>
+	</div>
+	<div class="subtitles">
+		<h2>Personal Details</h2>
+	</div><label class="details">First name:</label>
+		<input autocomplete="on" class="details" id="firstNameInput" onChange="information()" placeholder="James" required="" title="Enter your first name" type="text"><br>
+		<br>
+		<label class="details">Last name:</label><input autocomplete="on" onChange="information()" class="details" id="lastNameInput" placeholder="Adams" required="" title="Enter your last name" type="text"><br>
+		<br>
+		<label class="details">Email address:</label><input autocomplete="on" onChange="information()" class="details" id="emailInput" placeholder="jamesadams@gmail.com" required="" title="Enter your email address" type="email"><br>
+		<br>
+		<label class="details">Cellphone:</label><br>
+		<input autocomplete="on" onChange="information()" class="details" id="cellphoneInput" placeholder="0800838383" required="" title="Enter your Cellphone Number" type="tel"><br>
+		<br>
+		<label class="details">Age:</label><input autocomplete="on" onChange="information()" class="details" id="ageInput" placeholder="32" required="" title="Enter your Age" type="email"><br>
+		<br>
+	<p></p>
+	<footer>
+		<img class="logo_right" src="../images/kiwi_kars_transparent.png">
+	</footer>
+	<script src="../Site/kiwi_kars.js"></script>
+</body>
+</html>

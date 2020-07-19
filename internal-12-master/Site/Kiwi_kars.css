@@ -1,0 +1,187 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+footer {
+	background-color: #5b84b1ff;
+
+	color: darkblue;
+	font-size: 100%;
+	text-align: left;
+	height: 5vw;
+	width:80.2vw;
+}
+
+header {
+	background-color: #5b84b1ff;
+	height: 4vw;
+	color: white;
+	text-align: right;
+	width:79.3vw;
+}
+
+body {
+	width:79.3vw;
+	margin: auto;
+	font-family: 'Ubuntu', sans-serif;
+	background-color: white;
+}
+
+.numnights {
+	display: inline-block;
+	width: 16vw; 
+	height: 1vw;
+	background: transparent;
+	vertical-align: middle;
+	border: 1px solid #cdcdcd;
+	font-size: .9vw;
+}
+.background {
+	width: 100%;
+}
+.addChecks{
+	font-size:1.3vw;
+	align: center;
+		
+}
+.top_left {
+  font-size: 100%;
+  position: absolute;
+  top: 11vw;
+  left: 16.5vw;
+}
+
+.top_box {
+  box-shadow: .08vw .1vw rgba(0,0,0,0.5);
+  border-radius: .2vw;
+  position: absolute;
+  top: 10vw;
+  left: 16vw;
+  width: 22vw;
+  height: 13vw;
+  background-color: aliceblue;
+}
+.subtitles {
+	text-align: center;
+}
+
+.subtext{
+	text-align: center;
+	font-size: 2.9vw;
+}
+.subtitles, h2 {
+	font-size:2.9vw
+}
+
+.subtitles, .one {
+	font-size:1.7vw;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width:100%;	
+}
+
+.card_img {
+  height: 100%;
+  width:100%;	
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.suzuki {
+	width:10%;
+}
+
+.information {
+  position: relative;
+  float: right;
+  font-size: 90%;
+}
+.container h4 {
+  font-size: 100%;	
+}
+.logo {
+	height:90%;
+	float: left;
+	display: inline-block;
+}
+.logo_right {
+	height:90%;
+	float: right;
+	display: inline-block;
+}
+
+.float_right {
+	float: right;
+	display: inline-block;
+	width: 120px;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.5s;
+}
+.addCheck {
+
+  height: 1vw;
+  width: 1vw;
+  background-color: #eee;
+}
+
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+.details {
+	font-size:1.2vw
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.roomCard {
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+	width: 25vw;
+}
+
+.roomCard img {
+	width: 25vw;
+}
+
+[type='text'], select, [type='email'], [type='tel'], textarea {
+	display: inline-block;
+	padding: 0.5rem;
+	background: transparent;
+	vertical-align: middle;
+	width: 80vw;
+	border: 1px solid #cdcdcd;
+	border-radius: 4px;
+	font-size: 1vw;
+}
+
+table {
+	width: 80%;
+	margin: auto;
+}
+
